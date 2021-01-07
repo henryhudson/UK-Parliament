@@ -14,6 +14,7 @@ struct PartyBannerView: View {
             Rectangle()
                 .foregroundColor(party.backgroundColor)
                 .padding(.horizontal)
+            
             Text(party.name)
                 .foregroundColor(party.foregroundColor)
         }
@@ -23,6 +24,6 @@ struct PartyBannerView: View {
 
 struct PartyBannerView_Previews: PreviewProvider {
     static var previews: some View {
-        PartyBannerView(party: .conservative)
+        PartyBannerView(party: .greenParty)
     }
 }

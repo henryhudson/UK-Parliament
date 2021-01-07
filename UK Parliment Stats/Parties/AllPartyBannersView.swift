@@ -18,9 +18,17 @@ struct AllPartyBannersView: View {
             
             PartyBannerView(party: .greenParty)
             
-            PartyBannerView(party: .democraticUnionistParty)
+            PartyBannerView(party: .labour)
             
-            PartyBannerView(party: .democraticUnionistParty)
+            PartyBannerView(party: .liberalDemocrat)
+            
+            PartyBannerView(party: .plaidCymru)
+            
+            PartyBannerView(party: .scottishNationalParty)
+            
+            PartyBannerView(party: .sinnFein)
+            
+            PartyBannerView(party: .socialDemocraticAndLabourParty)
         }
     }
 }

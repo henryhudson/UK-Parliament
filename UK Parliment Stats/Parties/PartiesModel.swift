@@ -62,7 +62,7 @@ extension Parties {
         case .democraticUnionistParty:
             return Color("backgroundDUP")
         case .greenParty:
-            return Color("backgroundGreen")
+            return Color("backgroundGREEN")
         case .independent:
             return Color("backgroundIND")
         case .labour:
@@ -92,7 +92,7 @@ extension Parties {
         case .democraticUnionistParty:
             return Color("foregroundDUP")
         case .greenParty:
-            return Color("foregroundGreen")
+            return Color("foregroundGREEN")
         case .independent:
             return Color("foregroundIND")
         case .labour:
