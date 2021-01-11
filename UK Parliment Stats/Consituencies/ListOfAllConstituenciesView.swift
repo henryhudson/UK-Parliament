@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct ListOfAllConstituenciesView: View {
-    @State var requests = Set<AnyCancellable>()
+    @StateObject var networking = Networking()
     @State var totalNumberOfMPs: Int = 0
     @State var namesOfAllConstituencies: [String] = []
     @State var constituencyMPNames: [String] = []
@@ -19,7 +19,7 @@ struct ListOfAllConstituenciesView: View {
         URL(string: "https://members-api.parliament.uk/api/Location/Constituency/Search?skip=\(urlSkipAmount)&take=20")!
     }
 
-    // MARK: BODY
+    // MARK: Body
     var body: some View {
         VStack {
             List {
@@ -29,7 +29,9 @@ struct ListOfAllConstituenciesView: View {
             }
             
             Button(action: {
+                increaseSkipAmount()
                 loadMore()
+                
             }, label: {
                 Text("load more")
             })
@@ -41,29 +43,12 @@ struct ListOfAllConstituenciesView: View {
         }
     }
     
-    // MARK: FUNCS
-    /// Fetches JSON and stores the result in requests = Set<AnyCancellable>()
-    /// - Parameters:
-    ///   - url: json url
-    ///   - defaultValue: fail default json response
-    ///   - completion: result or defaultValue
-    func fetch<T: Decodable>(_ url: URL,
-                             defaultValue: T,
-                             completion: @escaping (T) -> Void) {
-        let decoder = JSONDecoder()
-        URLSession.shared.dataTaskPublisher(for: url)
-            .retry(1)
-            .map(\.data)
-            .decode(type: T.self, decoder: decoder)
-            .replaceError(with: defaultValue)
-            .sink(receiveValue: completion )
-            .store(in: &requests)
-    }
+    // MARK: Functions
     
     func loadMore() {
-        fetch(constituenciesURL, defaultValue: Constituencies.default) {
+        networking.fetch(constituenciesURL, defaultValue: Constituencies.default) {
             
-            totalNumberOfMPs = $0.totalResults
+//            totalNumberOfMPs = $0.totalResults
             //namesOfAllConstituencies.append($0.items[0].value.name)
             
             for constituency in $0.items {
@@ -77,7 +62,7 @@ struct ListOfAllConstituenciesView: View {
     }
     
     func toLoadOnAppear() {
-        fetch(constituenciesURL, defaultValue: Constituencies.default) {
+        networking.fetch(constituenciesURL, defaultValue: Constituencies.default) {
             totalNumberOfMPs = $0.totalResults
             //namesOfAllConstituencies.append($0.items[0].value.name)
             
@@ -86,9 +71,13 @@ struct ListOfAllConstituenciesView: View {
                 
                 namesOfAllConstituencies.append(constituency.value.name)
                 constituencyMPNames.append(constituency.value.currentRepresentation.member.value.nameDisplayAs)
-                
             }
-            
+        }
+    }
+    
+    func increaseSkipAmount() {
+        if urlSkipAmount < 631 {
+            urlSkipAmount += 20
         }
     }
 }

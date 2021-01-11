@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1E30CA25A7A93E00FF7AA3 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */; };
+		4E1E30CD25A7AA4500FF7AA3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30CC25A7AA4500FF7AA3 /* RemoteImage.swift */; };
+		4E1E30D025A7ABE700FF7AA3 /* MembersSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */; };
+		4E1E30D425A7B0C800FF7AA3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30D325A7B0C800FF7AA3 /* Networking.swift */; };
+		4E1E30DB25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30DA25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift */; };
+		4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30E125A900EB00FF7AA3 /* MPLatestElectionView.swift */; };
+		4E1E30E625A91BEB00FF7AA3 /* MPCandidateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30E525A91BEB00FF7AA3 /* MPCandidateCard.swift */; };
+		4E1E30EA25A926EE00FF7AA3 /* MPVotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30E925A926EE00FF7AA3 /* MPVotingView.swift */; };
+		4E1E30EE25A92FC100FF7AA3 /* MPVotingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30ED25A92FC100FF7AA3 /* MPVotingModel.swift */; };
+		4E1E30F125A9389D00FF7AA3 /* BillCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30F025A9389D00FF7AA3 /* BillCard.swift */; };
+		4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30F425A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift */; };
+		4E1E30FD25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30FC25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift */; };
+		4E1E310025AA0A4800FF7AA3 /* MPWrittenQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30FF25AA0A4800FF7AA3 /* MPWrittenQuestions.swift */; };
 		4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */; };
 		4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */; };
 		4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */; };
@@ -29,6 +42,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		4E1E30CC25A7AA4500FF7AA3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersSearchModel.swift; sourceTree = "<group>"; };
+		4E1E30D325A7B0C800FF7AA3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		4E1E30DA25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLatestElectionResultModel.swift; sourceTree = "<group>"; };
+		4E1E30E125A900EB00FF7AA3 /* MPLatestElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLatestElectionView.swift; sourceTree = "<group>"; };
+		4E1E30E525A91BEB00FF7AA3 /* MPCandidateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCandidateCard.swift; sourceTree = "<group>"; };
+		4E1E30E925A926EE00FF7AA3 /* MPVotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVotingView.swift; sourceTree = "<group>"; };
+		4E1E30ED25A92FC100FF7AA3 /* MPVotingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVotingModel.swift; sourceTree = "<group>"; };
+		4E1E30F025A9389D00FF7AA3 /* BillCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCard.swift; sourceTree = "<group>"; };
+		4E1E30F425A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWrittenQuestionsView.swift; sourceTree = "<group>"; };
+		4E1E30FC25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPQuestionAndAnswerView.swift; sourceTree = "<group>"; };
+		4E1E30FF25AA0A4800FF7AA3 /* MPWrittenQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWrittenQuestions.swift; sourceTree = "<group>"; };
 		4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAllConstituenciesView.swift; sourceTree = "<group>"; };
 		4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParliamentAPI.swift; sourceTree = "<group>"; };
 		4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyBannerView.swift; sourceTree = "<group>"; };
@@ -63,6 +89,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E1E30C825A7A91F00FF7AA3 /* Members of Parliament */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */,
+				4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */,
+				4E1E30F325A9FAF700FF7AA3 /* Member written questions */,
+				4E1E30E825A926D600FF7AA3 /* Member voting history */,
+				4E1E30D925A8FE6800FF7AA3 /* Member election result */,
+			);
+			path = "Members of Parliament";
+			sourceTree = "<group>";
+		};
+		4E1E30D225A7B05000FF7AA3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E30CC25A7AA4500FF7AA3 /* RemoteImage.swift */,
+				4E1E30D325A7B0C800FF7AA3 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4E1E30D725A8959000FF7AA3 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		4E1E30D925A8FE6800FF7AA3 /* Member election result */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E30E125A900EB00FF7AA3 /* MPLatestElectionView.swift */,
+				4E1E30E525A91BEB00FF7AA3 /* MPCandidateCard.swift */,
+				4E1E30DA25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift */,
+			);
+			path = "Member election result";
+			sourceTree = "<group>";
+		};
+		4E1E30E825A926D600FF7AA3 /* Member voting history */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E30E925A926EE00FF7AA3 /* MPVotingView.swift */,
+				4E1E30ED25A92FC100FF7AA3 /* MPVotingModel.swift */,
+				4E1E30F025A9389D00FF7AA3 /* BillCard.swift */,
+			);
+			path = "Member voting history";
+			sourceTree = "<group>";
+		};
+		4E1E30F325A9FAF700FF7AA3 /* Member written questions */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E30F425A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift */,
+				4E1E30FC25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift */,
+				4E1E30FF25AA0A4800FF7AA3 /* MPWrittenQuestions.swift */,
+			);
+			path = "Member written questions";
+			sourceTree = "<group>";
+		};
+		4E1E310225AA817E00FF7AA3 /* Lords */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lords;
+			sourceTree = "<group>";
+		};
 		4E5EDAEB25A68C6500DDAC1C /* Parties */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +185,13 @@
 			children = (
 				4E713C1025842212001A0EB2 /* UK_Parliment_StatsApp.swift */,
 				4E713C1225842212001A0EB2 /* ContentView.swift */,
+				4E1E30D225A7B05000FF7AA3 /* Networking */,
+				4E1E310225AA817E00FF7AA3 /* Lords */,
+				4E1E30C825A7A91F00FF7AA3 /* Members of Parliament */,
 				4E5EDAEB25A68C6500DDAC1C /* Parties */,
 				4E72043A25994E71002A8841 /* Consituencies */,
 				4E713C3725843623001A0EB2 /* Flocking Boids */,
+				4E1E30D725A8959000FF7AA3 /* JSON */,
 				4E713C202584224F001A0EB2 /* Side Menu */,
 				4E713C1425842216001A0EB2 /* Assets.xcassets */,
 				4E713C1925842216001A0EB2 /* Info.plist */,
@@ -215,13 +310,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1E30CA25A7A93E00FF7AA3 /* MemberView.swift in Sources */,
+				4E1E30D025A7ABE700FF7AA3 /* MembersSearchModel.swift in Sources */,
 				4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */,
+				4E1E30EE25A92FC100FF7AA3 /* MPVotingModel.swift in Sources */,
+				4E1E30FD25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift in Sources */,
 				4E713C41258437C0001A0EB2 /* ViewModel.swift in Sources */,
 				4E713C40258437C0001A0EB2 /* Model.swift in Sources */,
+				4E1E30DB25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift in Sources */,
 				4E72043E25994E80002A8841 /* ConstituenciesJSON.swift in Sources */,
+				4E1E30D425A7B0C800FF7AA3 /* Networking.swift in Sources */,
+				4E1E30CD25A7AA4500FF7AA3 /* RemoteImage.swift in Sources */,
 				4E713C242584224F001A0EB2 /* SlideMenu.swift in Sources */,
 				4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */,
 				4E5EDAF025A68E2900DDAC1C /* PartiesModel.swift in Sources */,
+				4E1E310025AA0A4800FF7AA3 /* MPWrittenQuestions.swift in Sources */,
+				4E1E30E625A91BEB00FF7AA3 /* MPCandidateCard.swift in Sources */,
+				4E1E30F125A9389D00FF7AA3 /* BillCard.swift in Sources */,
 				4E713C232584224F001A0EB2 /* MinimalisticButtonStyle.swift in Sources */,
 				4E713C3E258437C0001A0EB2 /* CGPoint-Helpers.swift in Sources */,
 				4E713C3D258437C0001A0EB2 /* FlockingBoidsView.swift in Sources */,
@@ -230,8 +335,11 @@
 				4E713C1125842212001A0EB2 /* UK_Parliment_StatsApp.swift in Sources */,
 				4E5EDAF325A6955B00DDAC1C /* AllPartyBannersView.swift in Sources */,
 				4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */,
+				4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */,
+				4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */,
 				4E72043D25994E80002A8841 /* ConstituenciesSearchModels.swift in Sources */,
 				4E713C3F258437C0001A0EB2 /* Triangle.swift in Sources */,
+				4E1E30EA25A926EE00FF7AA3 /* MPVotingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

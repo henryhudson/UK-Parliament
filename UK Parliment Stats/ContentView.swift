@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView() {
+        NavigationView {
             ZStack {
                 // ConstituenciesJSON()
-                ListOfAllConstituenciesView()
+                //ListOfAllConstituenciesView()
+                MemberView( memberID: 435)
+                //MPWrittenQuestionsView(memberId: 435)
                 SlideMenu()
             }
         }
