@@ -13,8 +13,9 @@ struct ContentView: View {
             ZStack {
                 // ConstituenciesJSON()
                 //ListOfAllConstituenciesView()
-                MemberView( memberID: 435)
+                //MemberView( memberID: 435)
                 //MPWrittenQuestionsView(memberId: 435)
+                ListOfLords()
                 SlideMenu()
             }
         }

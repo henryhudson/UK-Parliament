@@ -20,6 +20,10 @@
 		4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30F425A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift */; };
 		4E1E30FD25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30FC25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift */; };
 		4E1E310025AA0A4800FF7AA3 /* MPWrittenQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30FF25AA0A4800FF7AA3 /* MPWrittenQuestions.swift */; };
+		4E1E310B25ADF42600FF7AA3 /* LordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E310A25ADF42600FF7AA3 /* LordView.swift */; };
+		4E1E310E25ADF6E100FF7AA3 /* LordsSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */; };
+		4E1E311125AE039B00FF7AA3 /* ListOfLords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */; };
+		4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */; };
 		4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */; };
 		4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */; };
 		4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */; };
@@ -55,6 +59,10 @@
 		4E1E30F425A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWrittenQuestionsView.swift; sourceTree = "<group>"; };
 		4E1E30FC25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPQuestionAndAnswerView.swift; sourceTree = "<group>"; };
 		4E1E30FF25AA0A4800FF7AA3 /* MPWrittenQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWrittenQuestions.swift; sourceTree = "<group>"; };
+		4E1E310A25ADF42600FF7AA3 /* LordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordView.swift; sourceTree = "<group>"; };
+		4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordsSearchModel.swift; sourceTree = "<group>"; };
+		4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfLords.swift; sourceTree = "<group>"; };
+		4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordInfoModel.swift; sourceTree = "<group>"; };
 		4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAllConstituenciesView.swift; sourceTree = "<group>"; };
 		4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParliamentAPI.swift; sourceTree = "<group>"; };
 		4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyBannerView.swift; sourceTree = "<group>"; };
@@ -150,6 +158,10 @@
 		4E1E310225AA817E00FF7AA3 /* Lords */ = {
 			isa = PBXGroup;
 			children = (
+				4E1E310A25ADF42600FF7AA3 /* LordView.swift */,
+				4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */,
+				4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */,
+				4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */,
 			);
 			path = Lords;
 			sourceTree = "<group>";
@@ -312,6 +324,7 @@
 			files = (
 				4E1E30CA25A7A93E00FF7AA3 /* MemberView.swift in Sources */,
 				4E1E30D025A7ABE700FF7AA3 /* MembersSearchModel.swift in Sources */,
+				4E1E310B25ADF42600FF7AA3 /* LordView.swift in Sources */,
 				4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */,
 				4E1E30EE25A92FC100FF7AA3 /* MPVotingModel.swift in Sources */,
 				4E1E30FD25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift in Sources */,
@@ -335,9 +348,12 @@
 				4E713C1125842212001A0EB2 /* UK_Parliment_StatsApp.swift in Sources */,
 				4E5EDAF325A6955B00DDAC1C /* AllPartyBannersView.swift in Sources */,
 				4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */,
+				4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */,
 				4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */,
 				4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */,
+				4E1E310E25ADF6E100FF7AA3 /* LordsSearchModel.swift in Sources */,
 				4E72043D25994E80002A8841 /* ConstituenciesSearchModels.swift in Sources */,
+				4E1E311125AE039B00FF7AA3 /* ListOfLords.swift in Sources */,
 				4E713C3F258437C0001A0EB2 /* Triangle.swift in Sources */,
 				4E1E30EA25A926EE00FF7AA3 /* MPVotingView.swift in Sources */,
 			);
