@@ -24,6 +24,8 @@
 		4E1E310E25ADF6E100FF7AA3 /* LordsSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */; };
 		4E1E311125AE039B00FF7AA3 /* ListOfLords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */; };
 		4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */; };
+		4E1E311825AE4FFF00FF7AA3 /* LordContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311725AE4FFF00FF7AA3 /* LordContactView.swift */; };
+		4E1E311C25AE558500FF7AA3 /* LordContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */; };
 		4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */; };
 		4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */; };
 		4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */; };
@@ -63,6 +65,8 @@
 		4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordsSearchModel.swift; sourceTree = "<group>"; };
 		4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfLords.swift; sourceTree = "<group>"; };
 		4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordInfoModel.swift; sourceTree = "<group>"; };
+		4E1E311725AE4FFF00FF7AA3 /* LordContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordContactView.swift; sourceTree = "<group>"; };
+		4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordContactModel.swift; sourceTree = "<group>"; };
 		4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAllConstituenciesView.swift; sourceTree = "<group>"; };
 		4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParliamentAPI.swift; sourceTree = "<group>"; };
 		4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyBannerView.swift; sourceTree = "<group>"; };
@@ -162,8 +166,18 @@
 				4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */,
 				4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */,
 				4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */,
+				4E1E311625AE4FB800FF7AA3 /* Lord Contact */,
 			);
 			path = Lords;
+			sourceTree = "<group>";
+		};
+		4E1E311625AE4FB800FF7AA3 /* Lord Contact */ = {
+			isa = PBXGroup;
+			children = (
+				4E1E311725AE4FFF00FF7AA3 /* LordContactView.swift */,
+				4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */,
+			);
+			path = "Lord Contact";
 			sourceTree = "<group>";
 		};
 		4E5EDAEB25A68C6500DDAC1C /* Parties */ = {
@@ -340,6 +354,7 @@
 				4E1E310025AA0A4800FF7AA3 /* MPWrittenQuestions.swift in Sources */,
 				4E1E30E625A91BEB00FF7AA3 /* MPCandidateCard.swift in Sources */,
 				4E1E30F125A9389D00FF7AA3 /* BillCard.swift in Sources */,
+				4E1E311825AE4FFF00FF7AA3 /* LordContactView.swift in Sources */,
 				4E713C232584224F001A0EB2 /* MinimalisticButtonStyle.swift in Sources */,
 				4E713C3E258437C0001A0EB2 /* CGPoint-Helpers.swift in Sources */,
 				4E713C3D258437C0001A0EB2 /* FlockingBoidsView.swift in Sources */,
@@ -348,6 +363,7 @@
 				4E713C1125842212001A0EB2 /* UK_Parliment_StatsApp.swift in Sources */,
 				4E5EDAF325A6955B00DDAC1C /* AllPartyBannersView.swift in Sources */,
 				4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */,
+				4E1E311C25AE558500FF7AA3 /* LordContactModel.swift in Sources */,
 				4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */,
 				4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */,
 				4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */,

@@ -19,6 +19,7 @@ enum Parties {
     case scottishNationalParty
     case sinnFein
     case socialDemocraticAndLabourParty
+    case crossBench
 }
 
 // MARK: Name
@@ -47,6 +48,8 @@ extension Parties {
             return "Sinn Féin"
         case .socialDemocraticAndLabourParty:
             return "Social Democratic & Labour Party"
+        case .crossBench:
+            return "Cross Bench"
         }
     }
 }
@@ -77,6 +80,8 @@ extension Parties {
             return Color("backgroundSF")
         case .socialDemocraticAndLabourParty:
             return Color("backgroundSDLP")
+        case .crossBench:
+            return Color("backgroundXB")
         }
     }
 }
@@ -107,6 +112,8 @@ extension Parties {
             return Color("foregroundSF")
         case .socialDemocraticAndLabourParty:
             return Color("foregroundSDLP")
+        case .crossBench:
+            return Color("foregroundXB")
         }
     }
 }

@@ -15,7 +15,9 @@ struct ContentView: View {
                 //ListOfAllConstituenciesView()
                 //MemberView( memberID: 435)
                 //MPWrittenQuestionsView(memberId: 435)
-                ListOfLords()
+                //ListOfLords()
+                //LordView(lordID: 2175)
+                LordContactView(lordId: 2175)
                 SlideMenu()
             }
         }
