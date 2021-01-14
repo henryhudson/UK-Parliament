@@ -78,6 +78,8 @@ struct LordContactView: View {
     }
 }
 
+
+
 struct LordContactView_Previews: PreviewProvider {
     static var previews: some View {
         LordContactView(lordId: 2175)
