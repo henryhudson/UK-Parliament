@@ -20,13 +20,20 @@ class Networking: ObservableObject {
     func fetch<T: Decodable>(_ url: URL,
                              defaultValue: T,
                              completion: @escaping (T) -> Void) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(formatter)
         URLSession.shared.dataTaskPublisher(for: url)
             .retry(1)
             .map(\.data)
             .decode(type: T.self, decoder: decoder)
             .replaceError(with: defaultValue)
+            .receive(on: DispatchQueue.main)
             .sink(receiveValue: completion )
             .store(in: &requests)
+        
+        
     }
 }

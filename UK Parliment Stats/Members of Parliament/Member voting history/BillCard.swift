@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BillCard: View {
     let billTitle: String
-    let date: String
+    let date: Date
     let didVoteYay: Bool
     let numberInFavour: Int
     let numberAgainst: Int
@@ -19,7 +19,7 @@ struct BillCard: View {
             VStack(alignment: .leading) {
                 Text(billTitle)
                     .font(.title2)
-                Text(date)
+                Text("\(date)")
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -42,7 +42,7 @@ struct BillCard: View {
 struct BillCard_Previews: PreviewProvider {
     static var previews: some View {
         BillCard(billTitle: "Bill Title",
-                 date: "Date",
+                 date: Date(),
                  didVoteYay: true,
                  numberInFavour: 300,
                  numberAgainst: 200)

@@ -13,7 +13,7 @@ struct LordView: View {
     @State var memberOfHouseImage: String =  "https://photos.dodspeople.com/photos/26848.jpg"
     @State var lordName: String = "Lord title"
     @State var lordsConstituency: String = "Constituency"
-    @State var lordsStartDate: String = "Lord since"
+    @State var lordsStartDate: Date = Date()
     @State var peerage: String = "peer type"
     
     let lordID: Int
@@ -44,7 +44,7 @@ struct LordView: View {
                 }
             }
             
-            Text("Member of the house since " + lordsStartDate)
+            Text("Member of the house since \(lordsStartDate)")
             Text("Membership: " + peerage)
             
             NavigationLink(

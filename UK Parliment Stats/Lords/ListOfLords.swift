@@ -47,6 +47,7 @@ struct ListOfLords: View {
             listOfLords += $0.items
         }
     }
+    
     func loadMore() {
         skip += 20
         networking.fetch(listOfLordsURL, defaultValue: LordsSearchModel.default) {

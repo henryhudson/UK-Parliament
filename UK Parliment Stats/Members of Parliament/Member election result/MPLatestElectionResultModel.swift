@@ -26,6 +26,7 @@ struct MPLatestElection: Decodable {
             let party: Party
             struct Party: Decodable {
                 let name: String
+                let abbreviation: String
             }
         }
     }
@@ -40,7 +41,8 @@ struct MPLatestElection: Decodable {
                                                                         name: "candidate name",
                                                                         votes: 1,
                                                             voteShare: 0.218,
-                                                            party: MPLatestElection.Value.Candidate.Party(name: "party name")
+                                                            party: MPLatestElection.Value.Candidate.Party(name: "party name",
+                                                                                                          abbreviation: "abb")
                                                          )])
     )
 }

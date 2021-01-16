@@ -14,13 +14,18 @@ struct MPQuestionAndAnswerView: View {
     let answeringMember: String
     let memberOfParliamentImage: String
     
+    let askingDate: Date
+    let answeringDate: Date
+    
     var body: some View {
         VStack() {
             MessageView(message: message,
                         response: response,
                         askingMember: askingMember,
                         answeringMember: answeringMember,
-                        memberOfParliamentImage: memberOfParliamentImage)
+                        memberOfParliamentImage: memberOfParliamentImage,
+                        askingDate: askingDate,
+                        answeringDate: answeringDate)
         }
     }
 }
@@ -31,6 +36,10 @@ struct MessageView: View {
     let askingMember: String
     let answeringMember: String
     let memberOfParliamentImage: String
+    
+    let askingDate: Date
+    let answeringDate: Date
+    
     var body: some View {
         VStack {
             HStack {
@@ -44,6 +53,10 @@ struct MessageView: View {
                             RoundedRectangle(cornerRadius: 6)
                                 .foregroundColor(.blue)
                     )
+                    Text("\(askingDate)")
+                        .foregroundColor(.secondary)
+                        .font(.caption)
+                        .padding(.top, 0)
                 }
                 Spacer()
             }
@@ -69,7 +82,12 @@ struct MessageView: View {
                                 .foregroundColor(.blue)
                             
                         )
+                    Text("\(answeringDate)")
+                        .foregroundColor(.secondary)
+                        .font(.caption)
+                        .padding(.top, 0)
                 }
+                
             }
         }
         .padding(.horizontal)
@@ -82,7 +100,9 @@ struct MPQuestionAndAnswerView_Previews: PreviewProvider {
                                 response: "because",
                                 askingMember: "Asker",
                                 answeringMember: "Answerer",
-                                memberOfParliamentImage: "https://members-api.parliament.uk/api/Members/435/Thumbnail"
+                                memberOfParliamentImage: "https://members-api.parliament.uk/api/Members/435/Thumbnail",
+                                askingDate: Date(),
+                                answeringDate: Date()
                                 )
     }
 }

@@ -26,6 +26,7 @@ struct MPLatestElectionView: View {
     @State var electionResult: String = "Election Result"
     
     @State var electionCandidates: [MPLatestElection.Value.Candidate] = []
+    @State var dataPoints: [DataPoint] = []
     
     // MARK: Body
     var body: some View {
@@ -49,6 +50,10 @@ struct MPLatestElectionView: View {
             .padding(.top)
             
             if electionCandidates.count != 0 {
+                PieChart(dataPoints: dataPoints)
+                
+                
+                            
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach( 0 ..< electionCandidates.count ) { i in
@@ -80,7 +85,9 @@ struct MPLatestElectionView: View {
             electionResult = $0.value.result
             electionCandidates = $0.value.candidates
             
-            
+            for candidate in electionCandidates {
+                dataPoints.append(DataPoint(value: candidate.voteShare, color: Color("background\(candidate.party.abbreviation)")))
+            }
             
             
         }

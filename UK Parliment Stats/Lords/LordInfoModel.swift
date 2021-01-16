@@ -25,12 +25,12 @@ struct LordInfoModel: Decodable {
         struct LatestHouseMembership: Decodable {
             let membershipFrom: String
             let membershipFromId: Int
-            let membershipStartDate: String
+            let membershipStartDate: Date
             
             let membershipStatus: MembershipStatus
             struct MembershipStatus: Decodable {
                 let statusDescription: String
-                let statusStartDate: String
+                let statusStartDate: Date
             }
         }
     }
@@ -38,6 +38,15 @@ struct LordInfoModel: Decodable {
     static let `default` = LordInfoModel(value: Value(id: 0,
                                                       nameDisplayAs: "Lord Name",
                                                       thumbnailUrl: "Thumbnail URL",
-                                                      latestParty: Value.LatestParty(id: 0, name: "Party name", abbreviation: "abbreviation"),
-                                                      latestHouseMembership: Value.LatestHouseMembership(membershipFrom: "Peerage type", membershipFromId: 0, membershipStartDate: "Start date", membershipStatus: Value.LatestHouseMembership.MembershipStatus(statusDescription: "current member?", statusStartDate: "start date"))))
+                                                      latestParty: Value.LatestParty(
+                                                        id: 0,
+                                                        name: "Party name",
+                                                        abbreviation: "abbreviation"),
+                                                      latestHouseMembership: Value.LatestHouseMembership(
+                                                        membershipFrom: "Peerage type",
+                                                        membershipFromId: 0,
+                                                        membershipStartDate: Date(),
+                                                        membershipStatus: Value.LatestHouseMembership.MembershipStatus(
+                                                            statusDescription: "current member?",
+                                                            statusStartDate: Date()))))
 }

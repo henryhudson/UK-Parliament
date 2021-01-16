@@ -38,7 +38,9 @@ struct MPWrittenQuestionsView: View {
                                     response: questionsList[i].value.answerText,
                                     askingMember: memberName,
                                     answeringMember: questionsList[i].value.answeringMember.nameDisplayAs,
-                                    memberOfParliamentImage: questionsList[i].value.answeringMember.thumbnailUrl)
+                                    memberOfParliamentImage: questionsList[i].value.answeringMember.thumbnailUrl,
+                                    askingDate: questionsList[i].value.dateTabled,
+                                    answeringDate: questionsList[i].value.dateAnswered)
                     }
                 }
             }

@@ -14,7 +14,7 @@ struct MemberView: View {
     @State var memberOfParliamentImage: String =  "https://members-api.parliament.uk/api/Members/435/Thumbnail"
     @State var memberName: String = "members title"
     @State var membersConstituency: String = "Constituency"
-    @State var membershipStartDate: String = "Member since"
+    @State var membershipStartDate: Date = Date()
     
     let memberID: Int
     var memberURL: URL {
@@ -44,7 +44,7 @@ struct MemberView: View {
                 }
             }
             
-            Text("Member of parliament since " + membershipStartDate)
+            Text("Member of parliament since \( membershipStartDate)")
             
             NavigationLink(
                 destination: Text("435/Biography"),

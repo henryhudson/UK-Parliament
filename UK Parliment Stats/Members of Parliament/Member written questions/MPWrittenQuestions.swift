@@ -16,10 +16,10 @@ struct MPWrittenQuestions: Decodable {
         struct Value: Decodable {
             let id: Int
             let askingMemberId: Int
-            let dateTabled: String
+            let dateTabled: Date
             let questionText: String
             let answeringMemberId: Int
-            let dateAnswered: String
+            let dateAnswered: Date
             let answerText: String
             
             let answeringMember: AnsweringMember
@@ -35,10 +35,10 @@ struct MPWrittenQuestions: Decodable {
                                               items: [
                                                 MPWrittenQuestions.QandA(value: QandA.Value(id: 0,
                                                                                             askingMemberId: 0,
-                                                                                            dateTabled: "date asked",
+                                                                                            dateTabled: Date(),
                                                                                             questionText: "question",
                                                                                             answeringMemberId: 0,
-                                                                                            dateAnswered: "date answered",
+                                                                                            dateAnswered: Date(),
                                                                                             answerText: "answer",
                                                                                             answeringMember: QandA.Value.AnsweringMember(
                                                                                                 id: 0,

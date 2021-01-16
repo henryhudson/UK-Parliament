@@ -17,7 +17,7 @@ struct MPVoting: Decodable {
             let id: Int
             let inAffirmativeLobby: Bool
             let title: String
-            let date: String
+            let date: Date
             let numberInFavour: Int
             let numberAgainst: Int
         }
@@ -29,7 +29,7 @@ struct MPVoting: Decodable {
                                         MPVoting.Bill(value: Bill.Value(id: 0,
                                                                            inAffirmativeLobby: false,
                                                                            title: "Bill title",
-                                                                           date: "Date",
+                                                                           date: Date(),
                                                                            numberInFavour: 0,
                                                                            numberAgainst: 0))
                                     ])

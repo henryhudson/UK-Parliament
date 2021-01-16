@@ -26,12 +26,12 @@ struct MPInfo: Decodable {
         struct LatestHouseMembership: Decodable {
             let membershipFrom: String
             let membershipFromId: Int
-            let membershipStartDate: String
+            let membershipStartDate: Date
             
             let membershipStatus: MembershipStatus
             struct MembershipStatus: Decodable {
                 let statusDescription: String
-                let statusStartDate: String
+                let statusStartDate: Date
             }
         }
     }
@@ -47,10 +47,10 @@ struct MPInfo: Decodable {
                                                latestHouseMembership: Value.LatestHouseMembership(
                                                 membershipFrom: "Constituency",
                                                 membershipFromId: 0,
-                                                membershipStartDate: "start date",
+                                                membershipStartDate: Date(),
                                                 membershipStatus: MPInfo.Value.LatestHouseMembership.MembershipStatus(
                                                     statusDescription: "is member?",
-                                                    statusStartDate: "last election start date"
+                                                    statusStartDate: Date()
                                                 )
                                                )
     ))

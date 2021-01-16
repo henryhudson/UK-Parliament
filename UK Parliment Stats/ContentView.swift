@@ -10,15 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            ZStack {
-                // ConstituenciesJSON()
-                //ListOfAllConstituenciesView()
-                //MemberView( memberID: 435)
-                //MPWrittenQuestionsView(memberId: 435)
-                //ListOfLords()
-                //LordView(lordID: 2175)
-                LordContactView(lordId: 2175)
-                SlideMenu()
+//            ZStack {
+//                // ConstituenciesJSON()
+//                //ListOfAllConstituenciesView()
+//                //MemberView( memberID: 435)
+//                //MPWrittenQuestionsView(memberId: 435)
+//                //ListOfLords()
+//                //LordView(lordID: 2175)
+//                //LordContactView(lordId: 2175)
+//               // SlideMenu()
+//            }
+            TabView {
+                ListOfLords()
+                    .tabItem {
+                        TabItemIcon(imageName: "house", label: "Lord")
+                    }
+                
+                MemberView(memberID: 435)
+                    .tabItem {
+                        TabItemIcon(imageName: "house", label: "Members")
+                    }
+                
+                
             }
         }
     }
