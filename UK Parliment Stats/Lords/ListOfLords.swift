@@ -39,10 +39,9 @@ struct ListOfLords: View {
     }
     
     // MARK: Functions
-    
     func loadOnAppear() {
         networking.fetch(listOfLordsURL, defaultValue: LordsSearchModel.default) {
-            print($0)
+           // print($0)
             numberOfEligibleLords = $0.totalResults
             listOfLords += $0.items
         }
@@ -53,8 +52,6 @@ struct ListOfLords: View {
         networking.fetch(listOfLordsURL, defaultValue: LordsSearchModel.default) {
             listOfLords += $0.items
         }
-        
-        
     }
 }
 

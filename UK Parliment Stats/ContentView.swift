@@ -21,14 +21,23 @@ struct ContentView: View {
 //               // SlideMenu()
 //            }
             TabView {
-                ListOfLords()
+                LordsGridView()
                     .tabItem {
-                        TabItemIcon(imageName: "house", label: "Lord")
+                        TabItemIcon(imageName: "house",
+                                    label: "Lord")
                     }
                 
-                MemberView(memberID: 435)
+                MembersGridView()
                     .tabItem {
-                        TabItemIcon(imageName: "house", label: "Members")
+                        TabItemIcon(imageName: "house",
+                                    label: "Members")
+                    }
+                
+                ListOfAllConstituenciesView()
+                    .tabItem {
+                        TabItemIcon(imageName: "person.3",
+                                    label: "Constituencies")
+                        
                     }
                 
                 

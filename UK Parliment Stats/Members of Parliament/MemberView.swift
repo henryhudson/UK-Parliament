@@ -11,7 +11,7 @@ struct MemberView: View {
     
     @StateObject var networking = Networking()
     
-    @State var memberOfParliamentImage: String =  "https://members-api.parliament.uk/api/Members/435/Thumbnail"
+    @State var memberOfParliamentImage: String = "" //"https://members-api.parliament.uk/api/Members/435/Thumbnail"
     @State var memberName: String = "members title"
     @State var membersConstituency: String = "Constituency"
     @State var membershipStartDate: Date = Date()
@@ -23,26 +23,28 @@ struct MemberView: View {
     
     // MARK: Body
     var body: some View {
-        VStack (alignment: .leading, spacing: 5) {
-            HStack {
+        VStack (alignment: .center, spacing: 5) {
+            
+            if memberOfParliamentImage != "" {
                 RemoteImage(url: memberOfParliamentImage)
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 130)
-                
-                VStack (alignment: .leading) {
-                    Group {
-                        Text(memberName)
-                            .bold()
-                        Text("of")
-                        Text(membersConstituency)
-                            .bold()
-                    }
-                    .padding(.horizontal)
-                    
-                    PartyBannerView(party: .conservative)
-                        .frame(height: 50)
-                }
+                    .frame(width: 200)
             }
+            
+            
+            Group {
+                Text(memberName)
+                    .bold()
+                Text("of")
+                Text(membersConstituency)
+                    .bold()
+            }
+            .padding(.horizontal)
+            
+            PartyBannerView(party: .conservative)
+                .frame(height: 50)
+            
+            
             
             Text("Member of parliament since \( membershipStartDate)")
             
@@ -83,7 +85,7 @@ struct MemberView: View {
     // MARK: Functions
     func toLoadOnAppear() {
         networking.fetch(memberURL, defaultValue: MPInfo.default) {
-            print($0)
+            //print($0)
             memberOfParliamentImage = $0.value.thumbnailUrl
             memberName = $0.value.nameDisplayAs
             membersConstituency = $0.value.latestHouseMembership.membershipFrom

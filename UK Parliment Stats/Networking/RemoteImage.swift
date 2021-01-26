@@ -9,9 +9,9 @@ import SwiftUI
 
 struct RemoteImage: View {
     private enum LoadState {
-        case loading,
-             success,
-             failure
+        case loading
+        case success
+        case failure
     }
     
     private class Loader: ObservableObject {

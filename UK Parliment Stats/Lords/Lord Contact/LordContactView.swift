@@ -73,7 +73,7 @@ struct LordContactView: View {
     func loadOnAppear() {
         networking.fetch(lordURL, defaultValue: LordContactModel.default) {
             lordContactDetails = $0.value
-            print(lordContactDetails)
+           // print(lordContactDetails)
         }
     }
 }

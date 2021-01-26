@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E1E30CA25A7A93E00FF7AA3 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */; };
 		4E1E30CD25A7AA4500FF7AA3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30CC25A7AA4500FF7AA3 /* RemoteImage.swift */; };
-		4E1E30D025A7ABE700FF7AA3 /* MembersSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */; };
+		4E1E30D025A7ABE700FF7AA3 /* MPInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30CF25A7ABE700FF7AA3 /* MPInfoModel.swift */; };
 		4E1E30D425A7B0C800FF7AA3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30D325A7B0C800FF7AA3 /* Networking.swift */; };
 		4E1E30DB25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30DA25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift */; };
 		4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E30E125A900EB00FF7AA3 /* MPLatestElectionView.swift */; };
@@ -36,6 +36,7 @@
 		4E66D45325B343AB00C42C16 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66D44F25B343AB00C42C16 /* DataPoint.swift */; };
 		4E66D45425B343AB00C42C16 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66D45025B343AB00C42C16 /* PieChart.swift */; };
 		4E66D45525B343AB00C42C16 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66D45125B343AB00C42C16 /* PieChartView.swift */; };
+		4E66D46025B37B5000C42C16 /* GridTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66D45F25B37B5000C42C16 /* GridTestingView.swift */; };
 		4E713C1125842212001A0EB2 /* UK_Parliment_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E713C1025842212001A0EB2 /* UK_Parliment_StatsApp.swift */; };
 		4E713C1325842212001A0EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E713C1225842212001A0EB2 /* ContentView.swift */; };
 		4E713C1525842216001A0EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E713C1425842216001A0EB2 /* Assets.xcassets */; };
@@ -50,12 +51,16 @@
 		4E713C41258437C0001A0EB2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E713C3C258437C0001A0EB2 /* ViewModel.swift */; };
 		4E72043D25994E80002A8841 /* ConstituenciesSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72043B25994E80002A8841 /* ConstituenciesSearchModels.swift */; };
 		4E72043E25994E80002A8841 /* ConstituenciesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72043C25994E80002A8841 /* ConstituenciesJSON.swift */; };
+		4E81587725B5CFA8000EEB0F /* PartyNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587625B5CFA8000EEB0F /* PartyNameText.swift */; };
+		4E81587B25B5D16F000EEB0F /* MembersGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587A25B5D16F000EEB0F /* MembersGridView.swift */; };
+		4E81587F25B5D68E000EEB0F /* MembersSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587E25B5D68E000EEB0F /* MembersSearchModel.swift */; };
+		4E8158C225B7BD72000EEB0F /* LordsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8158C125B7BD72000EEB0F /* LordsGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		4E1E30CC25A7AA4500FF7AA3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
-		4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersSearchModel.swift; sourceTree = "<group>"; };
+		4E1E30CF25A7ABE700FF7AA3 /* MPInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPInfoModel.swift; sourceTree = "<group>"; };
 		4E1E30D325A7B0C800FF7AA3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4E1E30DA25A8FFF600FF7AA3 /* MPLatestElectionResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLatestElectionResultModel.swift; sourceTree = "<group>"; };
 		4E1E30E125A900EB00FF7AA3 /* MPLatestElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLatestElectionView.swift; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		4E66D44F25B343AB00C42C16 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		4E66D45025B343AB00C42C16 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		4E66D45125B343AB00C42C16 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		4E66D45F25B37B5000C42C16 /* GridTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTestingView.swift; sourceTree = "<group>"; };
 		4E713C0D25842212001A0EB2 /* UK Parliment Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UK Parliment Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E713C1025842212001A0EB2 /* UK_Parliment_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK_Parliment_StatsApp.swift; sourceTree = "<group>"; };
 		4E713C1225842212001A0EB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,10 @@
 		4E713C3C258437C0001A0EB2 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4E72043B25994E80002A8841 /* ConstituenciesSearchModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstituenciesSearchModels.swift; sourceTree = "<group>"; };
 		4E72043C25994E80002A8841 /* ConstituenciesJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstituenciesJSON.swift; sourceTree = "<group>"; };
+		4E81587625B5CFA8000EEB0F /* PartyNameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyNameText.swift; sourceTree = "<group>"; };
+		4E81587A25B5D16F000EEB0F /* MembersGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersGridView.swift; sourceTree = "<group>"; };
+		4E81587E25B5D68E000EEB0F /* MembersSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersSearchModel.swift; sourceTree = "<group>"; };
+		4E8158C125B7BD72000EEB0F /* LordsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordsGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				4E1E30C925A7A93E00FF7AA3 /* MemberView.swift */,
-				4E1E30CF25A7ABE700FF7AA3 /* MembersSearchModel.swift */,
+				4E1E30CF25A7ABE700FF7AA3 /* MPInfoModel.swift */,
+				4E81587E25B5D68E000EEB0F /* MembersSearchModel.swift */,
 				4E1E30F325A9FAF700FF7AA3 /* Member written questions */,
 				4E1E30E825A926D600FF7AA3 /* Member voting history */,
 				4E1E30D925A8FE6800FF7AA3 /* Member election result */,
+				4E81587A25B5D16F000EEB0F /* MembersGridView.swift */,
 			);
 			path = "Members of Parliament";
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 			children = (
 				4E1E310A25ADF42600FF7AA3 /* LordView.swift */,
 				4E1E311025AE039B00FF7AA3 /* ListOfLords.swift */,
+				4E8158C125B7BD72000EEB0F /* LordsGridView.swift */,
 				4E1E310D25ADF6E100FF7AA3 /* LordsSearchModel.swift */,
 				4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */,
 				4E1E311625AE4FB800FF7AA3 /* Lord Contact */,
@@ -241,6 +254,8 @@
 				4E713C1025842212001A0EB2 /* UK_Parliment_StatsApp.swift */,
 				4E713C1225842212001A0EB2 /* ContentView.swift */,
 				4E66D3EF25B0B02200C42C16 /* TabItemIcon.swift */,
+				4E66D45F25B37B5000C42C16 /* GridTestingView.swift */,
+				4E81587525B5CF5B000EEB0F /* View Modifiers */,
 				4E66D43C25B340F800C42C16 /* Charts */,
 				4E1E30D225A7B05000FF7AA3 /* Networking */,
 				4E1E310225AA817E00FF7AA3 /* Lords */,
@@ -296,6 +311,14 @@
 				4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */,
 			);
 			path = Consituencies;
+			sourceTree = "<group>";
+		};
+		4E81587525B5CF5B000EEB0F /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4E81587625B5CFA8000EEB0F /* PartyNameText.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +392,7 @@
 			files = (
 				4E66D45325B343AB00C42C16 /* DataPoint.swift in Sources */,
 				4E1E30CA25A7A93E00FF7AA3 /* MemberView.swift in Sources */,
-				4E1E30D025A7ABE700FF7AA3 /* MembersSearchModel.swift in Sources */,
+				4E1E30D025A7ABE700FF7AA3 /* MPInfoModel.swift in Sources */,
 				4E1E310B25ADF42600FF7AA3 /* LordView.swift in Sources */,
 				4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */,
 				4E1E30EE25A92FC100FF7AA3 /* MPVotingModel.swift in Sources */,
@@ -386,8 +409,12 @@
 				4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */,
 				4E5EDAF025A68E2900DDAC1C /* PartiesModel.swift in Sources */,
 				4E1E310025AA0A4800FF7AA3 /* MPWrittenQuestions.swift in Sources */,
+				4E8158C225B7BD72000EEB0F /* LordsGridView.swift in Sources */,
 				4E1E30E625A91BEB00FF7AA3 /* MPCandidateCard.swift in Sources */,
+				4E81587B25B5D16F000EEB0F /* MembersGridView.swift in Sources */,
+				4E81587F25B5D68E000EEB0F /* MembersSearchModel.swift in Sources */,
 				4E1E30F125A9389D00FF7AA3 /* BillCard.swift in Sources */,
+				4E66D46025B37B5000C42C16 /* GridTestingView.swift in Sources */,
 				4E1E311825AE4FFF00FF7AA3 /* LordContactView.swift in Sources */,
 				4E713C232584224F001A0EB2 /* MinimalisticButtonStyle.swift in Sources */,
 				4E713C3E258437C0001A0EB2 /* CGPoint-Helpers.swift in Sources */,
@@ -397,6 +424,7 @@
 				4E713C2725842419001A0EB2 /* SideMenuNavigationLinkLabel.swift in Sources */,
 				4E713C1125842212001A0EB2 /* UK_Parliment_StatsApp.swift in Sources */,
 				4E5EDAF325A6955B00DDAC1C /* AllPartyBannersView.swift in Sources */,
+				4E81587725B5CFA8000EEB0F /* PartyNameText.swift in Sources */,
 				4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */,
 				4E1E311C25AE558500FF7AA3 /* LordContactModel.swift in Sources */,
 				4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */,

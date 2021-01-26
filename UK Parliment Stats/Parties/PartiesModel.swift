@@ -61,15 +61,15 @@ extension Parties {
         case .alliance:
             return Color("backgroundALL")
         case .conservative:
-            return Color("backgroundCON")
+            return Color("backgroundCon")
         case .democraticUnionistParty:
             return Color("backgroundDUP")
         case .greenParty:
-            return Color("backgroundGREEN")
+            return Color("backgroundGreen")
         case .independent:
-            return Color("backgroundIND")
+            return Color("backgroundInd")
         case .labour:
-            return Color("backgroundLAB")
+            return Color("backgroundLab")
         case .liberalDemocrat:
             return Color("backgroundLD")
         case .plaidCymru:
@@ -93,15 +93,15 @@ extension Parties {
         case .alliance:
             return Color("foregroundALL")
         case .conservative:
-            return Color("foregroundCON")
+            return Color("foregroundCon")
         case .democraticUnionistParty:
             return Color("foregroundDUP")
         case .greenParty:
-            return Color("foregroundGREEN")
+            return Color("foregroundGreen")
         case .independent:
             return Color("foregroundIND")
         case .labour:
-            return Color("foregroundLAB")
+            return Color("foregroundLab")
         case .liberalDemocrat:
             return Color("foregroundLD")
         case .plaidCymru:
