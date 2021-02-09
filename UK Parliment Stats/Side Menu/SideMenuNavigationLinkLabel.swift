@@ -15,7 +15,6 @@ struct SideMenuNavigationLinkLabel: View {
     
     var body: some View {
         HStack {
-            
             ZStack {
                 RoundedRectangle(cornerSize: CGSize(width: 0, height: 0))
                     .stroke(lineWidth: 1.5)
@@ -25,16 +24,11 @@ struct SideMenuNavigationLinkLabel: View {
                     .padding(.all, 10)
                     .foregroundColor(Color.orange)
                     .font(Font.subheadline.bold() )
-                    
             }
-                
         }
         .fixedSize()
         .animation(.linear(duration: 0.05))
     }
-    
-
-    
 }
 
 struct SideMenuNavigationLinkLabel_Previews: PreviewProvider {

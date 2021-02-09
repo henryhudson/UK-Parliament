@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */; };
 		4E1E311825AE4FFF00FF7AA3 /* LordContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311725AE4FFF00FF7AA3 /* LordContactView.swift */; };
 		4E1E311C25AE558500FF7AA3 /* LordContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */; };
+		4E31F89A25D2D0060009285B /* SideMenuNavLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31F89925D2D0060009285B /* SideMenuNavLinkLabel.swift */; };
 		4E56E57B259A7B810035A510 /* ListOfAllConstituenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */; };
 		4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */; };
 		4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */; };
@@ -51,10 +52,14 @@
 		4E713C41258437C0001A0EB2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E713C3C258437C0001A0EB2 /* ViewModel.swift */; };
 		4E72043D25994E80002A8841 /* ConstituenciesSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72043B25994E80002A8841 /* ConstituenciesSearchModels.swift */; };
 		4E72043E25994E80002A8841 /* ConstituenciesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72043C25994E80002A8841 /* ConstituenciesJSON.swift */; };
+		4E78CC0825C8AD9A00EB3409 /* ConstituenciesMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78CC0725C8AD9A00EB3409 /* ConstituenciesMap.swift */; };
+		4E78CC0B25C8B02C00EB3409 /* MapTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78CC0A25C8B02C00EB3409 /* MapTesting.swift */; };
 		4E81587725B5CFA8000EEB0F /* PartyNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587625B5CFA8000EEB0F /* PartyNameText.swift */; };
 		4E81587B25B5D16F000EEB0F /* MembersGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587A25B5D16F000EEB0F /* MembersGridView.swift */; };
 		4E81587F25B5D68E000EEB0F /* MembersSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81587E25B5D68E000EEB0F /* MembersSearchModel.swift */; };
 		4E8158C225B7BD72000EEB0F /* LordsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8158C125B7BD72000EEB0F /* LordsGridView.swift */; };
+		4ED18B0D25C0E6CC00083A23 /* Geo3287.json in Resources */ = {isa = PBXBuildFile; fileRef = 4ED18B0C25C0E6CC00083A23 /* Geo3287.json */; };
+		4ED18B1125C0E74B00083A23 /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED18B1025C0E74B00083A23 /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +82,7 @@
 		4E1E311325AE10E600FF7AA3 /* LordInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordInfoModel.swift; sourceTree = "<group>"; };
 		4E1E311725AE4FFF00FF7AA3 /* LordContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordContactView.swift; sourceTree = "<group>"; };
 		4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordContactModel.swift; sourceTree = "<group>"; };
+		4E31F89925D2D0060009285B /* SideMenuNavLinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuNavLinkLabel.swift; sourceTree = "<group>"; };
 		4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAllConstituenciesView.swift; sourceTree = "<group>"; };
 		4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParliamentAPI.swift; sourceTree = "<group>"; };
 		4E5EDAEC25A68CD400DDAC1C /* PartyBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyBannerView.swift; sourceTree = "<group>"; };
@@ -104,10 +110,13 @@
 		4E713C3C258437C0001A0EB2 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4E72043B25994E80002A8841 /* ConstituenciesSearchModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstituenciesSearchModels.swift; sourceTree = "<group>"; };
 		4E72043C25994E80002A8841 /* ConstituenciesJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstituenciesJSON.swift; sourceTree = "<group>"; };
+		4E78CC0725C8AD9A00EB3409 /* ConstituenciesMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstituenciesMap.swift; sourceTree = "<group>"; };
+		4E78CC0A25C8B02C00EB3409 /* MapTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTesting.swift; sourceTree = "<group>"; };
 		4E81587625B5CFA8000EEB0F /* PartyNameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyNameText.swift; sourceTree = "<group>"; };
 		4E81587A25B5D16F000EEB0F /* MembersGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersGridView.swift; sourceTree = "<group>"; };
 		4E81587E25B5D68E000EEB0F /* MembersSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersSearchModel.swift; sourceTree = "<group>"; };
 		4E8158C125B7BD72000EEB0F /* LordsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordsGridView.swift; sourceTree = "<group>"; };
+		4ED18B0C25C0E6CC00083A23 /* Geo3287.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Geo3287.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED18B1125C0E74B00083A23 /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +157,7 @@
 		4E1E30D725A8959000FF7AA3 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				4E4AAB8325C0E3F90015DAE9 /* Consituencies */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -201,6 +212,22 @@
 				4E1E311B25AE558500FF7AA3 /* LordContactModel.swift */,
 			);
 			path = "Lord Contact";
+			sourceTree = "<group>";
+		};
+		4E4AAB8325C0E3F90015DAE9 /* Consituencies */ = {
+			isa = PBXGroup;
+			children = (
+				4E4AAB8425C0E4690015DAE9 /* Geometry */,
+			);
+			path = Consituencies;
+			sourceTree = "<group>";
+		};
+		4E4AAB8425C0E4690015DAE9 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				4ED18B0C25C0E6CC00083A23 /* Geo3287.json */,
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		4E5EDAEB25A68C6500DDAC1C /* Parties */ = {
@@ -284,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				4E713C212584224F001A0EB2 /* MinimalisticButtonStyle.swift */,
+				4E31F89925D2D0060009285B /* SideMenuNavLinkLabel.swift */,
 				4E713C222584224F001A0EB2 /* SlideMenu.swift */,
 				4E713C2625842418001A0EB2 /* SideMenuNavigationLinkLabel.swift */,
 			);
@@ -309,6 +337,9 @@
 				4E56E57A259A7B810035A510 /* ListOfAllConstituenciesView.swift */,
 				4E72043B25994E80002A8841 /* ConstituenciesSearchModels.swift */,
 				4E5EDAE825A66F0F00DDAC1C /* ParliamentAPI.swift */,
+				4E78CC0725C8AD9A00EB3409 /* ConstituenciesMap.swift */,
+				4E78CC0A25C8B02C00EB3409 /* MapTesting.swift */,
+				4ED18B1325C0F1C700083A23 /* Geometry */,
 			);
 			path = Consituencies;
 			sourceTree = "<group>";
@@ -319,6 +350,13 @@
 				4E81587625B5CFA8000EEB0F /* PartyNameText.swift */,
 			);
 			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		4ED18B1325C0F1C700083A23 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +375,9 @@
 			dependencies = (
 			);
 			name = "UK Parliment Stats";
+			packageProductDependencies = (
+				4ED18B1025C0E74B00083A23 /* PureSwiftUI */,
+			);
 			productName = "UK Parliment Stats";
 			productReference = 4E713C0D25842212001A0EB2 /* UK Parliment Stats.app */;
 			productType = "com.apple.product-type.application";
@@ -364,6 +405,9 @@
 				Base,
 			);
 			mainGroup = 4E713C0425842212001A0EB2;
+			packageReferences = (
+				4ED18B0F25C0E74B00083A23 /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = 4E713C0E25842212001A0EB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E713C1825842216001A0EB2 /* Preview Assets.xcassets in Resources */,
+				4ED18B0D25C0E6CC00083A23 /* Geo3287.json in Resources */,
 				4E713C1525842216001A0EB2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +441,7 @@
 				4E1E310B25ADF42600FF7AA3 /* LordView.swift in Sources */,
 				4E5EDAED25A68CD400DDAC1C /* PartyBannerView.swift in Sources */,
 				4E1E30EE25A92FC100FF7AA3 /* MPVotingModel.swift in Sources */,
+				4E31F89A25D2D0060009285B /* SideMenuNavLinkLabel.swift in Sources */,
 				4E1E30FD25A9FF2F00FF7AA3 /* MPQuestionAndAnswerView.swift in Sources */,
 				4E713C41258437C0001A0EB2 /* ViewModel.swift in Sources */,
 				4E66D45525B343AB00C42C16 /* PieChartView.swift in Sources */,
@@ -416,6 +462,7 @@
 				4E1E30F125A9389D00FF7AA3 /* BillCard.swift in Sources */,
 				4E66D46025B37B5000C42C16 /* GridTestingView.swift in Sources */,
 				4E1E311825AE4FFF00FF7AA3 /* LordContactView.swift in Sources */,
+				4E78CC0825C8AD9A00EB3409 /* ConstituenciesMap.swift in Sources */,
 				4E713C232584224F001A0EB2 /* MinimalisticButtonStyle.swift in Sources */,
 				4E713C3E258437C0001A0EB2 /* CGPoint-Helpers.swift in Sources */,
 				4E713C3D258437C0001A0EB2 /* FlockingBoidsView.swift in Sources */,
@@ -428,6 +475,7 @@
 				4E5EDAE925A66F0F00DDAC1C /* ParliamentAPI.swift in Sources */,
 				4E1E311C25AE558500FF7AA3 /* LordContactModel.swift in Sources */,
 				4E1E311425AE10E600FF7AA3 /* LordInfoModel.swift in Sources */,
+				4E78CC0B25C8B02C00EB3409 /* MapTesting.swift in Sources */,
 				4E1E30F525A9FBA600FF7AA3 /* MPWrittenQuestionsView.swift in Sources */,
 				4E1E30E225A900EB00FF7AA3 /* MPLatestElectionView.swift in Sources */,
 				4E1E310E25ADF6E100FF7AA3 /* LordsSearchModel.swift in Sources */,
@@ -624,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4ED18B0F25C0E74B00083A23 /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ED18B1025C0E74B00083A23 /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED18B0F25C0E74B00083A23 /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E713C0525842212001A0EB2 /* Project object */;
 }

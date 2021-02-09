@@ -12,23 +12,18 @@ struct SlideMenu: View {
     @State private var x = -UIScreen.main.bounds.width * 0.8
     
     var body: some View {
-        
         HStack {
-            
             ZStack {
                 Color.black
                 
                 VStack (alignment: .leading) {
-
-                        
                     Spacer()
                     
                     NavigationLink(
                         destination: Text("Destination"),
                         label: {
-                            SideMenuNavigationLinkLabel(label: "API's")
+                            SideMenuNavLinkLabel(title: "home", iconImage: "house")
                         })
-                    
                     
                     Spacer()
                 }
